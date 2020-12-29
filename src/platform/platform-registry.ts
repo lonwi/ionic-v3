@@ -120,7 +120,7 @@ export const PLATFORM_CONFIGS: { [key: string]: PlatformConfig } = {
       keyboardResizes: keyboardResizes,
     },
     isMatch(plt: Platform) {
-      return plt.isPlatformMatch('ios', ['iphone', 'ipad', 'ipod'], ['windows phone']);
+      return plt.isPlatformMatch('ios', ['iphone', 'ipad', 'ipod' , 'macintosh'], ['windows phone']);
     },
     versionParser(plt: Platform) {
       return plt.matchUserAgentVersion(/OS (\d+)_(\d+)?/);
